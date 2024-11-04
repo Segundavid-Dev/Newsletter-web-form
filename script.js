@@ -14,8 +14,8 @@ const dismissModal = document.querySelector(".dismiss-modal");
 // add modal notification to DOM
 submit.addEventListener("click", function (e) {
   e.preventDefault();
-  container.classList.add("hidden");
   successMessageModal.classList.remove("hidden");
+  container.classList.add("hidden");
   emailRecipent.textContent = input_email.value;
 });
 

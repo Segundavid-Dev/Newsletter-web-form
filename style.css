@@ -134,9 +134,6 @@ h6 {
 .dismiss-modal:hover {
   background: hsl(4, 100%, 67%);
 }
-.form-image {
-  width: 50%;
-}
 
 .form-image img {
   width: 320px;
@@ -147,7 +144,6 @@ h6 {
   padding: 2rem;
   border-radius: 2rem;
   text-align: center;
-  border: 2px solid hsl(235, 18%, 26%);
 }
 
 .success-message-modal h1 {
@@ -181,9 +177,33 @@ h6 {
 }
 /* hidden class for DOM manipulation */
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .display {
   display: block;
+}
+
+/* Responsiveness and media queries*/
+
+/* Desktop version */
+@media screen and (max-width: 840px) {
+  body {
+    background: hsl(0, 0%, 100%);
+    margin-inline: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .form-input {
+    padding: 0;
+  }
+
+  .dismiss-modal {
+    padding: 15px 70px;
+  }
 }
