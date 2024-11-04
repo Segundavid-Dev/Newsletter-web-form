@@ -28,6 +28,7 @@ body {
 /* General styling */
 a {
   text-decoration: none;
+  text-align: center;
 }
 
 img {
@@ -129,7 +130,8 @@ h6 {
   justify-content: center;
 }
 
-.submit:hover {
+.submit:hover,
+.dismiss-modal:hover {
   background: hsl(4, 100%, 67%);
 }
 .form-image {
@@ -140,6 +142,44 @@ h6 {
   width: 320px;
 }
 
+.success-message-modal {
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem;
+  border-radius: 2rem;
+  border: 2px solid hsl(235, 18%, 26%);
+}
+
+.success-message-modal h1 {
+  line-height: 1;
+}
+
+.success-message-modal p {
+  font-size: 13px;
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
+}
+
+.success-message-text span {
+  font-weight: bold;
+}
+
+.success-message-modal img {
+  width: 30px;
+}
+
+.dismiss-modal {
+  padding-top: 12px;
+  padding-right: 120px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  background: hsl(234, 29%, 20%);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
 /* hidden class for DOM manipulation */
 .hidden {
   display: none;
