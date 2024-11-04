@@ -20,7 +20,9 @@
         <div class="form-input">
           <!-- Sign-up form start -->
           <h1>Stay updated!</h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <p class="form__subheading">
+            Join 60,000+ product managers receiving monthly <br />updates on:
+          </p>
           <ul>
             <li>
               <img src="./assets/images/icon-list.svg" alt="icon-list" />Product
@@ -43,8 +45,14 @@
             name="email"
             id="email"
             placeholder="email@company.com"
+            required
           />
-          <input type="submit" value="Subscribe to monthly newsletter" />
+          <br />
+          <input
+            type="submit"
+            value="Subscribe to monthly newsletter"
+            class="submit"
+          />
           <!-- Sign-up form end -->
 
           <!-- Success message start -->
@@ -52,16 +60,16 @@
             Thanks for subscribing! A confirmation email has been sent to
             ash@loremcompany.com. Please open it and click the button inside to
             confirm your subscription. Dismiss message
-            <!-- Success message end -->
           </div>
-        </div>
-        <div class="form-image">
-          <img
-            src="./assets/images/illustration-sign-up-desktop.svg"
-            alt="form image"
-          />
+          <!-- Success message end -->
         </div>
       </form>
+      <div class="form-image">
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="form image"
+        />
+      </div>
     </div>
 
     <!-- <div class="attribution">
