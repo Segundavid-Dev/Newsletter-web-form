@@ -11,6 +11,7 @@ const emailRecipent = document.querySelector(".email-recipent");
 const dismissModal = document.querySelector(".dismiss-modal");
 // const body = document.body;
 
+// add modal notification to DOM
 submit.addEventListener("click", function (e) {
   e.preventDefault();
   container.classList.add("hidden");
@@ -18,7 +19,8 @@ submit.addEventListener("click", function (e) {
   emailRecipent.textContent = input_email.value;
 });
 
-// remove modal notifaction an
+// remove modal notifaction from DOM
 dismissModal.addEventListener("click", function () {
-  alert("dimiss modal");
+  successMessageModal.classList.add("hidden");
+  container.classList.remove("hidden");
 });
