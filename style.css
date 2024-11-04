@@ -3,3 +3,46 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* Local font */
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  max-width: 1024px;
+  margin-inline: auto;
+  background: hsl(234, 29%, 20%);
+}
+
+/* General styling */
+a {
+  text-decoration: none;
+}
+
+input {
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 1rem;
+}
+
+/* wrapper */
+.container {
+  background: hsl(0, 0%, 100%);
+  padding: 2rem;
+}
